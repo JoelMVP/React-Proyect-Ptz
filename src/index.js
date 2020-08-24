@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// const element = document.createElement("h1");
+// element.innerText = "Hello, Bienvenido";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// const container = document.getElementById("root");
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// container.appendChild(element);
+
+//Utilizando React
+import React from "react";
+import ReactDOM from "react-dom";
+import Badge from "./components/Badge";
+// import "mdbootstrap/css/mdb.css";
+import "mdbootstrap/css/bootstrap.css";
+import "./global.css";
+// const name = "Joel";
+// -- jsx --
+// const element = <h1>Hola, Bienvenido</h1>;
+// const element = <h1>Hola soy {name}</h1>;
+
+//-- React.createElement --
+// const element = React.createElement(
+//   "a",
+//   { href: "https://joelmendozap.me" },
+//   `Hola soy un link de ${name}`
+// );
+
+// const element = (
+//   <div>
+//     <h1>Hola soy {name}</h1>
+//     <p>Soy ingeniero Frontend</p>
+//   </div>
+// );
+
+const container = document.getElementById("root");
+
+// ReactDOM.render(__que__,__donde__)
+ReactDOM.render(<Badge />, container);
