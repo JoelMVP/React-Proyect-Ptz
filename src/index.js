@@ -8,10 +8,11 @@
 //Utilizando React
 import React from "react";
 import ReactDOM from "react-dom";
-import Badge from "./components/Badge";
+
 // import "mdbootstrap/css/mdb.css";
 import "mdbootstrap/css/bootstrap.css";
 import "./global.css";
+import App from "./components/App";
 // const name = "Joel";
 // -- jsx --
 // const element = <h1>Hola, Bienvenido</h1>;
@@ -34,4 +35,5 @@ import "./global.css";
 const container = document.getElementById("root");
 
 // ReactDOM.render(__que__,__donde__)
-ReactDOM.render(<Badge />, container);
+// ReactDOM.render(<BadgeNew />, container);
+ReactDOM.render(<App />, container);
